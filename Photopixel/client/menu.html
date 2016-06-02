@@ -1,0 +1,54 @@
+<template name="menu">
+ <div class="row">
+    <section class="jumbotron">
+    <div class="container">
+      <h1>PHOTOPIXEL</h1>
+      <p>Compañia dedicada al plan gráfico</p>
+    </div>
+  </section>
+
+     <nav class="navbar navbar-inverse navbar-static-top" role="navigation"> 
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm">
+            <span class="sr-only">Desplegar / Ocultar Menu</span>
+            <span class="iron-bar"></span>
+            <span class="iron-bar"></span>
+            <span class="iron-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">PHOTOPIXEL</a>
+        </div>
+        <!--inicia el menu-->
+        <div class="collapse navbar-collapse" id="navegacion-fm">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/" class="glyphicon glyphicon-home"></a></li>
+             
+            <li><a href="#" > UPLOAD </a>
+            </li>
+            <li><a href="#" > SOPORTE</a>
+            </li>
+          
+          </ul>
+          <form action="" class="navbar-form navbar-fight" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="buscar">
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+            <ul class="nav navbar-nav navbar-right">
+            <li>
+                  {{>loginButtons}}
+            </li>
+          </ul>
+          </form>
+          
+        </div>
+
+
+      </div>
+       </nav> 
+    </div>
+
+
+</template>
